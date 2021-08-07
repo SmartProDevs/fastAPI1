@@ -29,7 +29,6 @@ async def get_model(model_name: ModelName):
     return {"model_name": model_name, "message": "DeepResnet"}
 
 
-
 @app.put("/itms/{item_id}")
 def update_item(item_id: int, item: Item):
     return {"item_name": item.name, "item_id": item_id}
